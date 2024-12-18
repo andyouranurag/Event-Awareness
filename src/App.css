@@ -1,0 +1,142 @@
+body {
+  background-color: #f0f8ff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Ensure it covers the full height */
+  background-image: 
+  linear-gradient(45deg, rgba(192, 192, 192, 0.5) 25%, transparent 25%, transparent 50%, rgba(192, 192, 192, 0.5) 50%, rgba(192, 192, 192, 0.5) 75%, transparent 50%, transparent),
+  linear-gradient(45deg, transparent 25%, rgba(192, 192, 192, 0.5) 25%, rgba(192, 192, 192, 0.5) 50%, transparent 50%, transparent 50%, rgba(192, 192, 192, 0.5) 75%);
+background-size: 150px 150px; /* Wider grid size */
+background-repeat: repeat; /* Repeat the background */
+}
+/* Navbar */
+
+.navbar {
+  padding: 15px 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black; /* Add a bottom border */
+
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.75rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 0;
+}
+
+.btn-custom {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+.btn-login {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-signup {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-login:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+.btn-signup:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+/*Event SEction*/
+#event-details {
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #000000;;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+#event-details h3 {
+  font-weight: bold;
+  margin-top: 0;
+  color: #000000;
+}
+.mt-3 {
+  margin-top: 30px;
+}
+.mt-3 h5 {
+  font-weight: bold;
+  margin-top: 0;
+  color: #050c13;
+}
+/* image */
+.image-container {
+  width: 100%;  /* Ensures the image container takes full width */
+  max-height: 500px;  /* Set a max height to control image size */
+  overflow: hidden;  /* Ensures no overflow from the container */
+}
+
+.image-container img {
+  object-fit: cover;  /* Ensures the image covers the container without distortion */
+  width: 100%;  /* Makes the image fill the container width */
+  height: 100%;  /* Makes the image fill the container height */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background-color: var(--footer-bg-color, '#ccd1d1'); /* Dynamic or standard color */
+  color: #0d0505;
+  border-top: 1px solid black;
+  border-bottom: 2px solid black; /* Add a bottom border */
+}
+
+.footer a {
+  color: #0b0606;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #2a1f1c8f;
+  text-decoration: underline;
+}
+
+/* carousel */
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+}
+.calendar-controls {
+  display: flex;
+  align-items: center;
+}
+.calendar-controls button,
+.calendar-controls input {
+  margin-right: 10px;
+}
+.navbar-nav .nav-item .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+.dashboard-menu {
+  display: flex;
+  align-items: center;
+}
+.dashboard-menu .dropdown-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
